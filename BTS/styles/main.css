@@ -1,0 +1,463 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}   
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    min-height: 70px;
+    background-color: #00000000;
+    border-radius: 15px;
+    padding-left: 5px;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a {
+    color: gainsboro;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+
+.menu .navbar ul li a:hover {
+    color: white;
+
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #000;
+    background-image: url(https://i.pinimg.com/originals/73/de/64/73de64672fb0f935609ba641861002df.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.titulo {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.titulo .info {
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 4%;
+    text-align: center;
+    text-shadow: 3px 3px 5px purple;
+}
+
+.Integrantes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;    
+}
+
+.card {
+    position: relative;
+    width: 290px;
+    height: 240px;
+    margin: 20px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    font-size: 13px;
+    background-color: rgba(87, 85, 85, 0.867);
+}
+
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.informacion {
+    background-color: rgba(87, 85, 85, 0.781);
+    height: 600px;
+    width: 1450px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.informacion img {
+    height: 450px;
+    padding-left: 850px;
+    margin-top: 208px;
+    float: left;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+.bts1 {
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 1400px;
+    margin: 15px;
+}
+
+.bts2 {
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 1400px;
+    margin: 15px;
+    margin-top: 110px;
+}
+
+.bts3 {
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 1400px;
+    margin: 15px;
+    margin-top: 240px;
+    padding-right: 500px;
+}
+
+.contain {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery {
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+.img-box {
+    height: 250px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(https://3.bp.blogspot.com/-DevIsTEe4No/WmcgCtc1RsI/AAAAAAAAAkM/Akf1-jLOTW8aNSPtNs1hD_uvZ0CeMvnrgCLcBGAs/s1600/7180d8bb05b2a5d7650f62f34b9a4833.1000x1000x1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box:nth-child(2) {
+    background: url(https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/7/5/3/b/314091516194818.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(3) {
+    background: url(https://2.bp.blogspot.com/-8yAoBUY1LYQ/WmcX3q9xPQI/AAAAAAAAAjo/qtdrcrbUAtImo1JbpuVVdrhnNCOEDeYCACLcBGAs/s1600/BTS_Skool_Luv_Affair_cover_art.png);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(4) {
+    background: url(https://th.bing.com/th/id/OIP.30F5J40JYXw2ZQP3MZ9ZFAHaHa?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(5) {
+    background: url(https://th.bing.com/th/id/OIP.ANWZO2taXhjlsisCUtnICwHaHa?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(6) {
+    background: url(https://th.bing.com/th/id/R.381abf1e887e5e142ea5921f5297518d?rik=F3JxgpBPGm1i8Q&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(7) {
+    background: url(https://vignette.wikia.nocookie.net/bangtan/images/8/8d/HYYH1cover.jpg/revision/latest?cb=20170525224302&path-prefix=es);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(8) {
+    background: url(https://fanchantradio.com/wp-content/uploads/2019/03/The-Most-Beautiful-Moment-in-Life-Pt.-2--500x500.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(9) {
+    background: url(https://ipurple.eu/1553-large_default/bts-young-forever-special-album.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box:nth-child(10) {
+    background: url(https://th.bing.com/th/id/R.fe027b740edfe598d64a31d2f3d9ef7a?rik=RaNlj6Bb3Pi3WA&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box a {
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 1px 1px 1px #ffffff;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+.img-box:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.img-box:hover a {
+    opacity: 1;
+    bottom: 25px;
+}
+.contain2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gallery2 {
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+.img-box2 {
+    height: 250px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url(https://1.bp.blogspot.com/-oaeeIVasAvM/WlN4f3kNCHI/AAAAAAAAAZs/0u9BQgbq4u0Zsua9Ix2z1hs5KnHaxUDNwCLcBGAs/s1600/BTS_Wings_digital_cover_art.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+.img-box2:nth-child(2) {
+    background: url(https://th.bing.com/th/id/OIP.C3f11dqu-El24aGLjh-cqAAAAA?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(3) {
+    background: url(https://th.bing.com/th/id/OIP.iZQmjlPIbOFaENe-z6b7EgHaHb?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(4) {
+    background: url(https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3a/49/f6/3a49f65b-600b-b220-beea-6917f2cda62b/00602567531531.rgb.jpg/1200x1200bf-60.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(5) {
+    background: url(https://th.bing.com/th/id/R.004d5d9ea156f1df32a5ff4951c14e71?rik=2jodoIsIsJdYNQ&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(6) {
+    background: url(https://th.bing.com/th/id/R.9516f5bf4d959d2fe305afee2b708365?rik=SQG1PBSO4%2b%2fNcQ&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(7) {
+    background: url(https://ibighit.com/bts/images/bts/discography/map_of_the_soul-persona/album-cover.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(8) {
+    background: url(https://www.allkpop.com/upload/2020/02/content/261733/1582756384-mots7.png);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(9) {
+    background: url(https://th.bing.com/th/id/OIP.WHGhLmYyf7s-x2Q8IgOpoAHaHa?rs=1&pid=ImgDetMain);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(10) {
+    background: url(https://cdn.shopify.com/s/files/1/0469/3927/5428/products/bts-album-be-deluxe-edition-131981_1200x1200.jpg?v=1618925102);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2:nth-child(11) {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e6c6c20-18ce-49a3-8e73-520e49b2f99b/df71lwm-64b15a96-0d1f-458d-a415-04f36f05719b.jpg/v1/fill/w_705,h_705,q_75,strp/bts___proof__album__by_bornthemelody_df71lwm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzA1IiwicGF0aCI6IlwvZlwvNWU2YzZjMjAtMThjZS00OWEzLThlNzMtNTIwZTQ5YjJmOTliXC9kZjcxbHdtLTY0YjE1YTk2LTBkMWYtNDU4ZC1hNDE1LTA0ZjM2ZjA1NzE5Yi5qcGciLCJ3aWR0aCI6Ijw9NzA1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.U_9_DAYRGiQ4PhLo5ipRMgUqQutcswoUPaWiJEKMmTI);
+    background-size: cover;
+    background-position: center; 
+}
+.img-box2 a {
+    color: #000000;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s, opacity 0.5s;
+    text-shadow: 1px 1px 1px #ffffff;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+.img-box2:hover {
+    width: 300px;
+    cursor: pointer;
+}
+.img-box2:hover a {
+    opacity: 1;
+    bottom: 25px;
+}
+
+@media (max-width:991px){
+
+    
+
+    .content{
+        min-height: 70px;
+    
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color:  rgba(195, 0, 255, 0.541);
+        border-radius: 25px;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+    .titulo .info {
+        font-size: 19px;
+        margin-top: 10%;
+    }
+
+}
